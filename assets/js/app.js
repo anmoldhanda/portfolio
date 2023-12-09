@@ -104,13 +104,10 @@ let validmessage = false;
 inputname.addEventListener("blur", () => {
   let regex = /^([a-zA-Z]){1,20}$/;
   let name = inputname.value;
-  // console.log(regex, name);
   if (regex.test(name)) {
-    // console.log(`name is valid`);
     validname = true;
     errorname.innerHTML = ``;
   } else {
-    // console.log(`name is invalid`);
     validname = false;
     errorname.innerHTML = `Please enter your valid Name`;
   }
@@ -118,13 +115,9 @@ inputname.addEventListener("blur", () => {
 inputemail.addEventListener("blur", () => {
   let regex = /^([_\-\.a-zA-Z0-9]+)@([_\-\.a-zA-Z0-9]+)\.([a-zA-Z]){1,25}$/;
   let email = inputemail.value;
-  // console.log(regex, email);
   if (regex.test(email)) {
-    // console.log(`email is valid`);
     validemail = true;
-    erroremail.innerHTML = ``;
   } else {
-    // console.log(`email is invalid`);
     validemail = false;
     erroremail.innerHTML = `Please enter your valid Email ID`;
   }
@@ -132,13 +125,10 @@ inputemail.addEventListener("blur", () => {
 inputsubject.addEventListener("blur", () => {
   let regex = /^([a-zA-Z0-9]){1,16}$/;
   let subject = inputsubject.value;
-  // console.log(regex, subject);
   if (regex.test(subject)) {
-    // console.log(`subject is valid`);
     validsubject = true;
     errorsubject.innerHTML = ``;
   } else {
-    // console.log(`subject is invalid`);
     validsubject = false;
     errorsubject.innerHTML = `Please enter your valid subject`;
   }
@@ -146,13 +136,10 @@ inputsubject.addEventListener("blur", () => {
 inputmessage.addEventListener("blur", () => {
   let regex = /^([a-zA-Z0-9]){1,25}$/;
   let message = inputmessage.value;
-  // console.log(regex, message);
   if (regex.test(message)) {
-    // console.log(`message is valid`);
     validmessage = true;
     errormessage.innerHTML = ``;
   } else {
-    // console.log(`message is invalid`);
     validmessage = false;
     errormessage.innerHTML = `Please enter your valid message`;
   }
