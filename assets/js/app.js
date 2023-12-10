@@ -1,8 +1,16 @@
-let hamburger = document.querySelector(".hamburger");
-let navmenuiconul = document.querySelector(".navmenuiconul");
+const hamburger = document.querySelector(".hamburger");
+const navmenuiconul = document.querySelector(".navmenuiconul");
+const navmenuicon = document.querySelectorAll(".navmenuicon");
 hamburger.addEventListener("click", () => {
   navmenuiconul.classList.toggle("active");
   hamburger.classList.toggle("active");
+});
+
+navmenuicon.forEach((link) => {
+  link.addEventListener("click", () => {
+    navmenuiconul.classList.remove("active");
+    hamburger.classList.remove("active");
+  });
 });
 
 let alphapopupcard = document.querySelector(".alphapopupcard");
