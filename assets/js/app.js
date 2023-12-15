@@ -1,4 +1,4 @@
-// navigation menu
+// ================== navigation menu ==================
 const hamburger = document.querySelector(".hamburger");
 const navmenuiconul = document.querySelector(".navmenuiconul");
 const navmenuicon = document.querySelectorAll(".navmenuicon");
@@ -14,7 +14,7 @@ navmenuicon.forEach((link) => {
   });
 });
 
-// work experience jobs cards
+// ================== work experience jobs modal ==================
 let alphapopupcard = document.querySelector(".alphapopupcard");
 let zealpopupcard = document.querySelector(".zealpopupcard");
 let alphaopenpopupbtn = document.getElementById("alphaopenpopupbtn");
@@ -40,7 +40,7 @@ zealclosepopupbtn.addEventListener("click", () => {
   document.body.classList.remove("active");
 });
 
-// workspace projects slider
+// ================== workspace projects slider  ==================
 let swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 30,
@@ -73,7 +73,7 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
-// theme changer
+// ================== dark light theme  ==================
 let lightmode = document.getElementById("lightmode");
 let darkmode = document.getElementById("darkmode");
 darkmode.addEventListener("click", function darktheme() {
@@ -88,7 +88,7 @@ lightmode.addEventListener("click", function lighttheme() {
   lightmode.classList.add("current-theme");
 });
 
-// contact me form
+// ================== contact form modal  ==================
 let contactformpopupcontainer = document.querySelector(
   ".contactformpopupcontainer"
 );
@@ -102,7 +102,7 @@ closecontactpopup.addEventListener("click", () => {
   contactformpopupcontainer.classList.remove("active");
 });
 
-// contact me form validation
+// ================== contact form modal validation  ==================
 const inputname = document.getElementById("inputname");
 const inputemail = document.getElementById("inputemail");
 const inputsubject = document.getElementById("inputsubject");
