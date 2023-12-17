@@ -34,8 +34,8 @@
     top: 46px;
     left: 0vw;
     grid-gap: 3vh 36vw;
-    backdrop-filter: blur(50px);
-    /* background: var(--color-white); */
+    /* backdrop-filter: blur(50px); */
+    background: var(--color-white);
     z-index: 5;
     padding: var(--card-padding);
     width: 100vw;
@@ -217,8 +217,8 @@
     top: 46px;
     left: 0vw;
     grid-gap: 3vh 36vw;
-    backdrop-filter: blur(50px);
-    /* background: var(--color-white); */
+    /* backdrop-filter: blur(50px); */
+    background: var(--color-white);
     z-index: 5;
     padding: var(--card-padding);
     width: 100vw;
@@ -406,8 +406,8 @@
     top: 46px;
     left: 0vw;
     grid-gap: 3vh 36vw;
-    /* background: var(--color-white); */
-    backdrop-filter: blur(50px);
+    background: var(--color-white);
+    /* backdrop-filter: blur(50px); */
     z-index: 5;
     padding: var(--card-padding);
     width: 100vw;
@@ -592,8 +592,8 @@
     top: 46px;
     left: 0vw;
     grid-gap: 3vh 36vw;
-    /* background: var(--color-white); */
-    backdrop-filter: blur(50px);
+    background: var(--color-white);
+    /* backdrop-filter: blur(50px); */
     z-index: 5;
     padding: var(--card-padding);
     width: 100vw;
