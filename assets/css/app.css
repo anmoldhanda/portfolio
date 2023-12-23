@@ -581,6 +581,7 @@ ul {
 .client-message .tagline {
   padding: 0 0 var(--card-padding);
   min-height: 11rem;
+  display: none;
 }
 
 .rightquoteicon {
