@@ -654,6 +654,10 @@ ul {
   font-size: 15px;
 }
 
+.form-floating {
+  position: relative;
+}
+
 .form-floating i {
   color: var(--color-danger);
   position: relative;
@@ -700,7 +704,7 @@ ul {
 #erroremail,
 #errorsubject,
 #errormessage {
-  position: relative;
+  position: absolute;
   left: 1em;
   color: crimson;
   white-space: nowrap;
