@@ -706,8 +706,8 @@ ul {
 #errormessage {
   position: absolute;
   left: 1em;
-  color: crimson;
-  white-space: nowrap;
+  color: var(--color-danger);
+  font-weight: bold;
 }
 
 #formsuccessmessage,
