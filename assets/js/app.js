@@ -21,23 +21,28 @@ let alphaopenpopupbtn = document.getElementById("alphaopenpopupbtn");
 let zealopenpopupbtn = document.getElementById("zealopenpopupbtn");
 let alphaclosepopupbtn = document.getElementById("alphaclosepopupbtn");
 let zealclosepopupbtn = document.getElementById("zealclosepopupbtn");
+let overlay = document.getElementById("overlay");
 alphaopenpopupbtn.addEventListener("click", () => {
   alphapopupcard.classList.add("active");
   document.body.classList.add("active");
+  overlay.style.display = "block";
 });
 alphaclosepopupbtn.addEventListener("click", () => {
   alphapopupcard.classList.remove("active");
   document.body.classList.remove("active");
+  overlay.style.display = "none";
 });
 
 zealopenpopupbtn.addEventListener("click", () => {
   zealpopupcard.classList.add("active");
   document.body.classList.add("active");
+  overlay.style.display = "block";
 });
 
 zealclosepopupbtn.addEventListener("click", () => {
   zealpopupcard.classList.remove("active");
   document.body.classList.remove("active");
+  overlay.style.display = "none";
 });
 
 // ================== workspace projects slider  ==================
@@ -94,12 +99,17 @@ let contactformpopupcontainer = document.querySelector(
 );
 let opencontactpopup = document.getElementById("opencontactpopup");
 let closecontactpopup = document.getElementById("closecontactpopup");
+let contactformoverlay = document.getElementById("contactformoverlay");
 opencontactpopup.addEventListener("click", () => {
   contactformpopupcontainer.classList.add("active");
+  contactformoverlay.style.display = "block";
+  document.body.classList.add("active");
 });
 
 closecontactpopup.addEventListener("click", () => {
   contactformpopupcontainer.classList.remove("active");
+  contactformoverlay.style.display = "none";
+  document.body.classList.remove("active");
 });
 
 // ================== contact form modal validation  ==================

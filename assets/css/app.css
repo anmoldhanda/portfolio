@@ -65,9 +65,9 @@ body {
   background: var(--color-background);
 }
 
-/* body.active {
+body.active {
   overflow: hidden;
-} */
+}
 
 a {
   color: var(--color-dark);
@@ -548,6 +548,23 @@ ul {
 
 .relativepopup {
   position: relative;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for the blur effect */
+  backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+  z-index: 1;
 }
 
 /* ================== workspace projects ================== */
