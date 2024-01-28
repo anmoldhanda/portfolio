@@ -191,6 +191,13 @@
     display: block;
     padding: 5px;
   }
+  .projectscontainer {
+    flex-direction: column;
+  }
+  .projectspicbox {
+    width: 100%;
+    height: 20rem;
+  }
 }
 
 /* ================== for small screen size devices ================== */
@@ -392,6 +399,13 @@
     display: block;
     padding: 5px;
   }
+  .projectscontainer {
+    flex-direction: column;
+  }
+  .projectspicbox {
+    width: 100%;
+    height: 20rem;
+  }
 }
 
 /* ================== for medium screen size devices ================== */
@@ -589,6 +603,13 @@
     opacity: 1;
     display: block;
     padding: 5px;
+  }
+  .projectscontainer {
+    flex-direction: column;
+  }
+  .projectspicbox {
+    width: 100%;
+    height: 20rem;
   }
 }
 

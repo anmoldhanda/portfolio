@@ -631,6 +631,65 @@ ul {
   display: none;
 }
 
+.projectscontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.spotifyclonepic {
+  background-image: url("/assets/images/spotifycloneprojectpic.png");
+}
+
+.authenticationapppic {
+  background-image: url("/assets/images/authenticationprojectpic.png");
+}
+
+.bloggingapppic {
+  background-image: url("/assets/images/blogprojectpic.png");
+}
+
+.projectspicbox {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: inline-block;
+  border-radius: var(--card-border-radius);
+  height: 30rem;
+  width: 30%;
+  position: relative;
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+.projectspicbox:hover {
+  box-shadow: none;
+}
+
+.contentbox {
+  position: absolute;
+  background: var(--color-white);
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  border-radius: 5px;
+  bottom: 5%;
+  left: 5%;
+}
+
+.linkstext {
+  transition: all 300ms ease;
+}
+
+.linkstext:hover {
+  color: var(--color-danger);
+}
+
 /* ================== footer section ================== */
 .copyrightholderfooter {
   background: var(--color-white);
