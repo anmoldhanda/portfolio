@@ -640,15 +640,15 @@ ul {
 }
 
 .spotifyclonepic {
-  background-image: url("/assets/images/spotifycloneprojectpic.png");
+  background-image: url("../../assets/images/spotifycloneprojectpic.png");
 }
 
 .authenticationapppic {
-  background-image: url("/assets/images/authenticationprojectpic.png");
+  background-image: url("../../assets/images/authenticationprojectpic.png");
 }
 
 .bloggingapppic {
-  background-image: url("/assets/images/blogprojectpic.png");
+  background-image: url("../../assets/images/blogprojectpic.png");
 }
 
 .projectspicbox {
