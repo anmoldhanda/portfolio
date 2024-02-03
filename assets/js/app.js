@@ -126,75 +126,93 @@ let validemail = false;
 let validsubject = false;
 let validmessage = false;
 inputname.addEventListener("blur", () => {
-  let regex = /^([a-zA-Z]){1,20}$/;
+  let regex = /^([a-zA-Z]\s*){3,25}$/;
   let name = inputname.value;
   if (regex.test(name)) {
+    // console.log("valid name");
     validname = true;
     errorname.innerHTML = ``;
   } else {
+    // console.log("invalid name");
     validname = false;
     errorname.innerHTML = `Please enter your valid Name`;
   }
 });
 inputemail.addEventListener("blur", () => {
-  let regex = /^([_\-\.a-zA-Z0-9]+)@([_\-\.a-zA-Z0-9]+)\.([a-zA-Z]){1,25}$/;
+  let regex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]){1,25}$/;
   let email = inputemail.value;
   if (regex.test(email)) {
+    // console.log("valid email id");
+    erroremail.innerHTML = ``;
     validemail = true;
   } else {
+    // console.log("invalid email id");
     validemail = false;
     erroremail.innerHTML = `Please enter your valid Email ID`;
   }
 });
 inputsubject.addEventListener("blur", () => {
-  let regex = /^([a-zA-Z0-9]){1,16}$/;
+  let regex = /^([a-zA-Z0-9]\s*){1,16}$/;
   let subject = inputsubject.value;
   if (regex.test(subject)) {
+    // console.log("valid subject");
     validsubject = true;
     errorsubject.innerHTML = ``;
   } else {
+    // console.log("invalid subject");
     validsubject = false;
     errorsubject.innerHTML = `Please enter your valid subject`;
   }
 });
 inputmessage.addEventListener("blur", () => {
-  let regex = /^([a-zA-Z0-9]){1,25}$/;
+  let regex = /^([a-zA-Z0-9]\s*){1,25}$/;
   let message = inputmessage.value;
   if (regex.test(message)) {
+    // console.log("valid message");
     validmessage = true;
     errormessage.innerHTML = ``;
   } else {
+    // console.log("invalid message");
     validmessage = false;
     errormessage.innerHTML = `Please enter your valid message`;
   }
 });
 
 const form = document.querySelector("#contactform");
-const submitButton = document.querySelector("#submitmessagebtn");
 const formsuccessmessage = document.getElementById("formsuccessmessage");
 const formerrormessage = document.getElementById("formerrormessage");
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbybeLsALN8gqqf61luaVcCC-pvBsl49Fk1BGIw3s9vw_MFQrTjTsFZh6nL5Th941XPu/exec";
 
-// if (validname && validemail && validsubject && validmessage) {
 form.addEventListener("submit", (e) => {
-  submitButton.disabled = true;
   e.preventDefault();
-  let requestBody = new FormData(form);
-  fetch(scriptURL, { method: "POST", body: requestBody })
-    .then((response) => {
-      // console.log(response);
-      formsuccessmessage.style.display = "block";
-      formerrormessage.style.display = "none";
-      submitButton.disabled = false;
-      form.reset();
-    })
-    .catch((error) => {
-      // console.log(error.message);
-      formsuccessmessage.style.display = "none";
-      formerrormessage.style.display = "block";
-      submitButton.disabled = false;
-      form.reset();
-    });
+  if (validname && validemail && validsubject && validmessage) {
+    let requestBody = new FormData(form);
+    fetch(scriptURL, { method: "POST", body: requestBody })
+      .then((response) => {
+        // console.log(response);
+        formsuccessmessage.style.display = "block";
+        formerrormessage.style.display = "none";
+        location.href = "#home";
+        form.submit();
+        form.reset();
+        setTimeout(() => {
+          formsuccessmessage.style.display = "none";
+        }, 3000);
+      })
+      .catch((error) => {
+        // console.log(error.message);
+        formsuccessmessage.style.display = "none";
+        formerrormessage.style.display = "block";
+        submitButton.disabled = false;
+        form.reset();
+        setTimeout(() => {
+          formerrormessage.style.display = "none";
+        }, 3000);
+      });
+  } else {
+    formerrormessage.style.display = "block";
+    location.href = "#";
+    form.reset();
+  }
 });
-// }
