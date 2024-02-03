@@ -203,7 +203,6 @@ form.addEventListener("submit", (e) => {
         // console.log(error.message);
         formsuccessmessage.style.display = "none";
         formerrormessage.style.display = "block";
-        submitButton.disabled = false;
         form.reset();
         setTimeout(() => {
           formerrormessage.style.display = "none";
@@ -211,6 +210,7 @@ form.addEventListener("submit", (e) => {
       });
   } else {
     formerrormessage.style.display = "block";
+    formsuccessmessage.style.display = "none";
     form.reset();
   }
 });
