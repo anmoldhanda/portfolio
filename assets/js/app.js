@@ -193,7 +193,6 @@ form.addEventListener("submit", (e) => {
         // console.log(response);
         formsuccessmessage.style.display = "block";
         formerrormessage.style.display = "none";
-        location.href = "#home";
         form.submit();
         form.reset();
         setTimeout(() => {
@@ -212,7 +211,6 @@ form.addEventListener("submit", (e) => {
       });
   } else {
     formerrormessage.style.display = "block";
-    location.href = "#";
     form.reset();
   }
 });
