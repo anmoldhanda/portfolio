@@ -640,29 +640,30 @@ ul {
 }
 
 .spotifyclonepic {
-  background-image: url("../../assets/images/spotifycloneprojectpic.png");
+  background-image: url("../../assets/images/spotify-clone-logo.webp");
 }
 
-.authenticationapppic {
-  background-image: url("../../assets/images/authenticationprojectpic.png");
+.instagramclonepic {
+  background-image: url("../../assets/images/instagram-clone-logo.png");
 }
 
 .bloggingapppic {
-  background-image: url("../../assets/images/blogprojectpic.png");
+  background-image: url("../../assets/images/bloggingwebapp-pic.webp");
 }
 
 .projectspicbox {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   display: inline-block;
   border-radius: var(--card-border-radius);
-  height: 30rem;
+  height: 20em;
   width: 30%;
   position: relative;
   box-shadow: var(--box-shadow);
   transition: all 300ms ease;
+  border: 2px solid var(--color-danger);
 }
 
 .projectspicbox:hover {
