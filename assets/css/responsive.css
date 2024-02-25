@@ -112,7 +112,7 @@
     align-items: center;
     justify-content: space-around;
     border-radius: var(--card-border-radius);
-    width: 90vw;
+    width: 100%;
   }
   .portfoliosection .cardbackground {
     background: var(--color-white);
@@ -120,7 +120,7 @@
     transition: all 300ms ease;
     box-shadow: var(--box-shadow);
     border-radius: var(--card-border-radius);
-    max-width: 85vw;
+    /* max-width: 85vw; */
     margin: 0 auto;
   }
   /* .jobdetailspopupcontainer {
@@ -342,7 +342,7 @@
     align-items: center;
     justify-content: space-around;
     border-radius: var(--card-border-radius);
-    width: 90vw;
+    width: 100%;
   }
   .portfoliosection .cardbackground {
     background: var(--color-white);
@@ -350,7 +350,7 @@
     transition: all 300ms ease;
     box-shadow: var(--box-shadow);
     border-radius: var(--card-border-radius);
-    max-width: 85vw;
+    /* max-width: 85vw; */
     margin: 0 auto;
   }
   /* .jobdetailspopupcontainer {
@@ -550,7 +550,7 @@
     align-items: center;
     justify-content: space-around;
     border-radius: var(--card-border-radius);
-    width: 90vw;
+    width: 100%;
   }
   .portfoliosection .cardbackground {
     background: var(--color-white);
@@ -558,7 +558,7 @@
     transition: all 300ms ease;
     box-shadow: var(--box-shadow);
     border-radius: var(--card-border-radius);
-    max-width: 85vw;
+    /* max-width: 85vw; */
     margin: 0 auto;
   }
   /* .jobdetailspopupcontainer {
@@ -734,7 +734,7 @@
     align-items: center;
     justify-content: space-around;
     border-radius: var(--card-border-radius);
-    width: 90vw;
+    width: 100%;
   }
   .portfoliosection .cardbackground {
     background: var(--color-white);
@@ -742,7 +742,7 @@
     transition: all 300ms ease;
     box-shadow: var(--box-shadow);
     border-radius: var(--card-border-radius);
-    max-width: 85vw;
+    /* max-width: 85vw; */
     margin: 0 auto;
   }
   /* .jobdetailspopupcontainer {

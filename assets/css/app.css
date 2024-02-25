@@ -499,7 +499,7 @@ ul {
   align-items: center;
   justify-content: space-around;
   border-radius: var(--card-border-radius);
-  /* border: 1px solid var(--color-danger); */
+  border: 2px solid var(--color-danger);
   width: 40vw;
 }
 
@@ -640,7 +640,7 @@ ul {
 }
 
 .spotifyclonepic {
-  background-image: url("../../assets/images/spotify-clone-logo.webp");
+  background-image: url("../../assets/images/spotify-clone-logo.png");
 }
 
 .instagramclonepic {
@@ -648,7 +648,7 @@ ul {
 }
 
 .bloggingapppic {
-  background-image: url("../../assets/images/bloggingwebapp-pic.webp");
+  background-image: url("../../assets/images/bloggingwebapp-pic.png");
 }
 
 .projectspicbox {
