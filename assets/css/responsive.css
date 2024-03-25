@@ -1,4 +1,4 @@
-/* ================== for extra small screen size devices ================== */
+/* ================================= for extra small screen size devices ================================= */
 @media only screen and (min-width: 50px) and (max-width: 319px) {
   .hamburger {
     display: block;
@@ -200,7 +200,7 @@
   }
 }
 
-/* ================== for small screen size devices ================== */
+/* ==================================== for small screen size devices ==================================== */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .hamburger {
     display: block;
@@ -408,7 +408,7 @@
   }
 }
 
-/* ================== for medium screen size devices ================== */
+/* =================================== for medium screen size devices =================================== */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .hamburger {
     display: block;
@@ -613,7 +613,7 @@
   }
 }
 
-/* ================== for large screen size devices ================== */
+/* ==================================== for large screen size devices ==================================== */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .hamburger {
     display: block;
@@ -790,7 +790,7 @@
   }
 }
 
-/* ================== for extra large screen size devices ================== */
+/* ================================= for extra large screen size devices ================================= */
 @media screen and (min-width: 2100px) {
   .cardbackground {
     margin-right: auto;

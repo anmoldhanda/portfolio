@@ -1,17 +1,18 @@
-/* ================== google fonts ================== */
+/* ==================================== google fonts ==================================== */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto+Mono:wght@200;300;400&display=swap");
-/* ================== color variables ================== */
+
+/* ==================================== global variables ==================================== */
 :root {
-  --color-primary: #5063bb;
+  /* --color-primary: #5063bb; */
   --color-danger: #ff7782;
-  --color-success: #41f1b5;
-  --color-warning: #ffbb55;
+  /* --color-success: #41f1b5;
+  --color-warning: #ffbb55; */
   --color-white: #fff;
   --color-dark: #363949;
-  --color-red: crimson;
-  --active-tab-color: #718aff;
+  /* --color-red: crimson; */
+  /* --active-tab-color: #718aff; */
   --color-light: rgba(132, 139, 200, 0.18);
-  --color-primary-variant: #111e88;
+  /* --color-primary-variant: #111e88; */
   --color-dark-variant: #677483;
   --color-background: #e2e3f0;
   --card-border-radius: 2rem;
@@ -19,17 +20,17 @@
   --border-radius-2: 0.8rem;
   --border-radius-3: 1.2rem;
   --card-padding: 1.8rem;
-  --padding-1: 1.2rem;
+  /* --padding-1: 1.2rem; */
   --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
-/* ================== text selection color variables ================== */
+/* =================================== text selection color variables =================================== */
 ::selection {
   background: var(--color-danger);
   color: var(--color-white);
 }
 
-/* ================== dark theme variables ================== */
+/* ==================================== dark theme variables ==================================== */
 .dark-theme-variables {
   --color-background: black;
   --color-white: black;
@@ -135,7 +136,7 @@ b {
   border-radius: var(--border-radius-1);
 }
 
-.primaryclass {
+/* .primaryclass {
   color: var(--color-primary);
 }
 
@@ -149,7 +150,7 @@ b {
 
 .warningclass {
   color: var(--color-warning);
-}
+} */
 
 .parentheader {
   /* background: var(--color-white); */
@@ -163,7 +164,7 @@ b {
   backdrop-filter: blur(50px);
 }
 
-/* ================== navigation bar ================== */
+/* ==================================== navigation bar ==================================== */
 .navigationbar {
   display: flex;
   align-items: center;
@@ -199,7 +200,7 @@ b {
 
 .logo .logotext {
   color: var(--color-danger);
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
 }
 
@@ -217,7 +218,7 @@ b {
   color: var(--color-danger);
 }
 
-/* ================== hamburger menu & mobile navigation animation ================== */
+/* ============================ hamburger menu & mobile navigation animation ============================ */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -310,7 +311,7 @@ ul {
   margin-bottom: 0;
 }
 
-/* ================== intro section ================== */
+/* ============================================ intro section ============================================ */
 .introsection {
   margin-top: 6rem;
 }
@@ -419,7 +420,7 @@ ul {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
-/* ================== tech stack section ================== */
+/* ========================================= tech stack section ========================================= */
 .skillsarea {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -475,7 +476,7 @@ ul {
   /* display: block;  */
 }
 
-/* ================== about section ================== */
+/* ============================================ about section ============================================ */
 .aboutsection .detailscontainer {
   margin: 0 0 -3em 0;
 }
@@ -493,7 +494,7 @@ ul {
   text-align: center;
 }
 
-/* ================== work experience jobs modal section ================== */
+/* ================================= work experience jobs modal section ================================= */
 .jobcards {
   display: flex;
   align-items: center;
@@ -568,7 +569,7 @@ ul {
   z-index: 1;
 }
 
-/* ================== workspace projects ================== */
+/* ========================================= workspace projects ========================================= */
 .cardsbody {
   background: var(--color-white);
   padding: var(--card-padding);
@@ -691,7 +692,7 @@ ul {
   color: var(--color-danger);
 }
 
-/* ================== footer section ================== */
+/* =========================================== footer section =========================================== */
 .copyrightholderfooter {
   background: var(--color-white);
   border-top: 1px dashed var(--color-danger);
@@ -705,7 +706,7 @@ ul {
   color: var(--color-danger);
 }
 
-/* ================== contact form modal section ================== */
+/* ===================================== contact form modal section ===================================== */
 .projectcontainer .tagline {
   text-transform: none;
   padding: 10px;
@@ -852,7 +853,7 @@ ul {
   margin: 0 auto 25px;
 } */
 
-/* ================== theme changer ================== */
+/* ============================================ theme changer ============================================ */
 .theme-toggler {
   background: var(--color-light);
   border-radius: var(--border-radius-1);
