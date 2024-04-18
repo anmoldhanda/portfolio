@@ -1,0 +1,812 @@
+/* ================================= for extra small screen size devices ================================= */
+@media only screen and (min-width: 50px) and (max-width: 319px) {
+    .hamburger {
+      display: block;
+    }
+    .hamburger.active .bars:nth-child(1) {
+      transform: translateY(5px) rotate(45deg);
+    }
+    .hamburger.active .bars:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bars:nth-child(3) {
+      transform: translateY(-5px) rotate(-45deg);
+    }
+    .navbarlist {
+      display: none;
+    }
+    .parentheader {
+      position: fixed;
+    }
+    .hamburger i {
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+    .navmenuiconul {
+      display: none;
+      transition: all 300ms ease;
+    }
+    .navmenuiconul.active {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      position: absolute;
+      top: 46px;
+      left: 0vw;
+      grid-gap: 3vh 36vw;
+      /* backdrop-filter: blur(50px); */
+      background: var(--color-white);
+      z-index: 5;
+      padding: var(--card-padding);
+      width: 100vw;
+    }
+    .navmenuicon a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0px 4px;
+    }
+    .cardbackground {
+      background: var(--color-white);
+      padding: var(--card-padding);
+      transition: all 300ms ease;
+      box-shadow: var(--box-shadow);
+      border-radius: var(--card-border-radius);
+      max-width: 100vw;
+      margin: 30px 20px;
+    }
+    .introcontainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+      gap: 30px;
+      margin: 10px auto;
+    }
+    .greetings {
+      font-size: 1.3rem;
+    }
+    .introduction {
+      padding: 0;
+    }
+    .social-icons {
+      display: none;
+    }
+    .detailscontainer {
+      display: block;
+      margin: auto;
+      /* width: 50vw; */
+    }
+    .detailscontainer .tagline {
+      padding: 0 0 10px 0;
+      text-align: center;
+    }
+    .inputfield,
+    .messagebox {
+      display: block;
+      background: var(--color-background);
+      margin: auto;
+      width: 63vw;
+      padding: 10px 40px;
+    }
+    .contactformpopupcontainer.active {
+      display: block;
+      position: fixed;
+      z-index: 3;
+      bottom: 5vh;
+      left: 3vw;
+    }
+    .messageboxinputlabel {
+      position: relative;
+      left: 36px;
+      bottom: 85px;
+      transition: all 300ms ease;
+    }
+    .messagebox:focus ~ .messageboxinputlabel {
+      position: relative;
+      bottom: 103px;
+      background: var(--color-white);
+    }
+    .jobcards {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: var(--card-border-radius);
+      width: 100%;
+    }
+    .portfoliosection .cardbackground {
+      background: var(--color-white);
+      padding: var(--card-padding);
+      transition: all 300ms ease;
+      box-shadow: var(--box-shadow);
+      border-radius: var(--card-border-radius);
+      /* max-width: 85vw; */
+      margin: 0 auto;
+    }
+    /* .jobdetailspopupcontainer {
+      position: fixed;
+      left: 0;
+      top: 8rem;
+      transform: translate(0, 0);
+    } */
+    .zealpopupcard.active,
+    .alphapopupcard.active {
+      display: block !important;
+      backdrop-filter: blur(50px);
+      transition: all 300ms ease;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90vw;
+    }
+    .jobdetailspopup .designation {
+      font-size: 1.2em;
+    }
+    .clientdesignation {
+      display: none;
+    }
+    .skillsarea {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      place-content: center;
+      grid-gap: 30px;
+    }
+    .skillsarea .skillsphoto {
+      display: grid;
+      place-self: center;
+      width: 10vw;
+      /* height: 30vh; */
+      max-width: 70px;
+    }
+    .heropic {
+      filter: drop-shadow(0 0 10px var(--color-danger));
+      height: 14em;
+      display: inline-block;
+      padding: 0 var(--card-padding);
+      max-width: 90vw;
+      width: auto;
+    }
+    .htmltext,
+    .csstext,
+    .jstext,
+    .bootstraptext,
+    .githubtext {
+      display: none;
+      transition: opacity 300ms ease-in-out;
+      /* opacity: 0; */
+      color: transparent;
+    }
+    .htmlpic:hover .htmltext,
+    .csspic:hover .csstext,
+    .jspic:hover .jstext,
+    .bootstrappic:hover .bootstraptext,
+    .githubpic:hover .githubtext {
+      position: absolute;
+      left: 0em;
+      bottom: -2em;
+      opacity: 1;
+      display: block;
+      padding: 5px;
+    }
+    .projectscontainer {
+      flex-direction: column;
+    }
+    .projectspicbox {
+      width: 100%;
+      height: 20rem;
+    }
+  }
+  
+  /* ==================================== for small screen size devices ==================================== */
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .hamburger {
+      display: block;
+    }
+    .hamburger.active .bars:nth-child(1) {
+      transform: translateY(5px) rotate(45deg);
+    }
+    .hamburger.active .bars:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bars:nth-child(3) {
+      transform: translateY(-5px) rotate(-45deg);
+    }
+    .navbarlist {
+      display: none;
+    }
+    .parentheader {
+      position: fixed;
+    }
+    .hamburger i {
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+    .navmenuiconul {
+      display: none;
+      transition: all 300ms ease;
+    }
+    .navmenuiconul.active {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      position: absolute;
+      top: 46px;
+      left: 0vw;
+      grid-gap: 3vh 36vw;
+      /* backdrop-filter: blur(50px); */
+      background: var(--color-white);
+      z-index: 5;
+      padding: var(--card-padding);
+      width: 100vw;
+    }
+    .navmenuicon a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0px 4px;
+    }
+    .cardbackground {
+      background: var(--color-white);
+      padding: var(--card-padding);
+      transition: all 300ms ease;
+      box-shadow: var(--box-shadow);
+      border-radius: var(--card-border-radius);
+      max-width: 100vw;
+      margin: 30px 15px;
+    }
+    .introcontainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+      gap: 30px;
+      margin: 10px auto;
+    }
+    .heropic {
+      filter: drop-shadow(0 0 10px var(--color-danger));
+      height: 14em;
+      display: inline-block;
+      padding: 0 var(--card-padding);
+      max-width: 85vw;
+      width: auto;
+    }
+    .greetings {
+      font-size: 1.3rem;
+    }
+    .introduction {
+      padding: 0;
+    }
+    .social-icons {
+      position: absolute;
+      left: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      top: 148px;
+    }
+    .skillsarea {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      place-content: center;
+      grid-gap: 30px;
+    }
+    .skillsarea .skillsphoto {
+      display: grid;
+      place-self: center;
+      width: 10vw;
+      /* height: 30vh; */
+    }
+    .detailscontainer {
+      display: block;
+      margin: auto;
+      /* width: 50vw; */
+    }
+    .detailscontainer .tagline {
+      padding: 0 0 10px 0;
+      text-align: center;
+    }
+    .inputfield,
+    .messagebox {
+      display: block;
+      background: var(--color-background);
+      margin: auto;
+      width: 63vw;
+      padding: 10px 40px;
+    }
+    .contactformpopupcontainer.active {
+      display: block;
+      position: fixed;
+      z-index: 3;
+      bottom: 4vh;
+      left: 15vw;
+    }
+    .messageboxinputlabel {
+      position: relative;
+      left: 36px;
+      bottom: 85px;
+      transition: all 300ms ease;
+    }
+    .messagebox:focus ~ .messageboxinputlabel {
+      position: relative;
+      bottom: 103px;
+      background: var(--color-white);
+    }
+    .jobcards {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: var(--card-border-radius);
+      width: 100%;
+    }
+    .portfoliosection .cardbackground {
+      background: var(--color-white);
+      padding: var(--card-padding);
+      transition: all 300ms ease;
+      box-shadow: var(--box-shadow);
+      border-radius: var(--card-border-radius);
+      /* max-width: 85vw; */
+      margin: 0 auto;
+    }
+    /* .jobdetailspopupcontainer {
+      position: fixed;
+      left: 0.8em;
+      top: 8rem;
+      transform: translate(-1%, -5%);
+    } */
+    .zealpopupcard.active,
+    .alphapopupcard.active {
+      display: block !important;
+      backdrop-filter: blur(50px);
+      transition: all 300ms ease;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90vw;
+    }
+    .jobdetailspopup .designation {
+      font-size: 1.3rem;
+    }
+    .clientdesignation {
+      display: none;
+    }
+    .htmltext,
+    .csstext,
+    .jstext,
+    .bootstraptext,
+    .githubtext {
+      display: none;
+      transition: opacity 300ms ease-in-out;
+      /* opacity: 0; */
+      color: transparent;
+    }
+    .htmlpic:hover .htmltext,
+    .csspic:hover .csstext,
+    .jspic:hover .jstext,
+    .bootstrappic:hover .bootstraptext,
+    .githubpic:hover .githubtext {
+      position: absolute;
+      left: 0em;
+      bottom: -2em;
+      opacity: 1;
+      display: block;
+      padding: 5px;
+    }
+    .projectscontainer {
+      flex-direction: column;
+    }
+    .projectspicbox {
+      width: 100%;
+      height: 20rem;
+    }
+  }
+  
+  /* =================================== for medium screen size devices =================================== */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+    .hamburger.active .bars:nth-child(1) {
+      transform: translateY(5px) rotate(45deg);
+    }
+    .hamburger.active .bars:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bars:nth-child(3) {
+      transform: translateY(-5px) rotate(-45deg);
+    }
+    .navbarlist {
+      display: none;
+    }
+    .parentheader {
+      position: fixed;
+    }
+    .hamburger i {
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+    .navmenuiconul {
+      display: none;
+      transition: all 300ms ease;
+    }
+    .navmenuiconul.active {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      position: absolute;
+      top: 46px;
+      left: 0vw;
+      grid-gap: 3vh 36vw;
+      background: var(--color-white);
+      /* backdrop-filter: blur(50px); */
+      z-index: 5;
+      padding: var(--card-padding);
+      width: 100vw;
+    }
+    .navmenuicon a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0px 4px;
+    }
+    .cardbackground {
+      background: var(--color-white);
+      padding: var(--card-padding);
+      transition: all 300ms ease;
+      box-shadow: var(--box-shadow);
+      border-radius: var(--card-border-radius);
+      max-width: 85vw;
+      margin: 30px auto;
+    }
+    .introcontainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+      gap: 30px;
+      margin: 10px auto;
+    }
+    .heropic {
+      filter: drop-shadow(0 0 10px var(--color-danger));
+      height: 14em;
+      display: inline-block;
+      padding: 0 var(--card-padding);
+      max-width: 90vw;
+      width: auto;
+    }
+    .greetings {
+      font-size: 1.3rem;
+    }
+    .introduction {
+      padding: 0;
+    }
+    .skillsarea {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      place-content: center;
+      grid-gap: 30px;
+    }
+    .skillsarea .skillsphoto {
+      display: grid;
+      place-self: center;
+      width: 10vw;
+      /* height: 30vh; */
+    }
+    .social-icons {
+      position: absolute;
+      left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      top: 210px;
+    }
+    .detailscontainer {
+      display: block;
+      margin: auto;
+      /* width: 50vw; */
+    }
+    .detailscontainer .tagline {
+      padding: 0 0 10px 0;
+      text-align: center;
+    }
+    .inputfield,
+    .messagebox {
+      display: block;
+      background: var(--color-background);
+      margin: auto;
+      width: 63vw;
+      padding: 10px 40px;
+    }
+    .contactformpopupcontainer.active {
+      display: block;
+      position: fixed;
+      z-index: 3;
+      bottom: 5vh;
+      left: 22vw;
+    }
+    .messageboxinputlabel {
+      position: relative;
+      left: 36px;
+      bottom: 85px;
+      transition: all 300ms ease;
+    }
+    .messagebox:focus ~ .messageboxinputlabel {
+      position: relative;
+      bottom: 103px;
+      background: var(--color-white);
+    }
+    .jobcards {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: var(--card-border-radius);
+      width: 100%;
+    }
+    .portfoliosection .cardbackground {
+      background: var(--color-white);
+      padding: var(--card-padding);
+      transition: all 300ms ease;
+      box-shadow: var(--box-shadow);
+      border-radius: var(--card-border-radius);
+      /* max-width: 85vw; */
+      margin: 0 auto;
+    }
+    /* .jobdetailspopupcontainer {
+      position: fixed;
+      left: 2em;
+      top: 8rem;
+      transform: translate(-1%, -5%);
+    } */
+    .zealpopupcard.active,
+    .alphapopupcard.active {
+      display: block !important;
+      backdrop-filter: blur(50px);
+      transition: all 300ms ease;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90vw;
+    }
+    .jobdetailspopup .designation {
+      font-size: 1.3rem;
+    }
+    .htmltext,
+    .csstext,
+    .jstext,
+    .bootstraptext,
+    .githubtext {
+      display: none;
+      transition: opacity 300ms ease-in-out;
+      /* opacity: 0; */
+      color: transparent;
+    }
+    .htmlpic:hover .htmltext,
+    .csspic:hover .csstext,
+    .jspic:hover .jstext,
+    .bootstrappic:hover .bootstraptext,
+    .githubpic:hover .githubtext {
+      position: absolute;
+      left: 0em;
+      bottom: -2em;
+      opacity: 1;
+      display: block;
+      padding: 5px;
+    }
+    .projectscontainer {
+      flex-direction: column;
+    }
+    .projectspicbox {
+      width: 100%;
+      height: 20rem;
+    }
+  }
+  
+  /* ==================================== for large screen size devices ==================================== */
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .hamburger {
+      display: block;
+    }
+    .hamburger.active .bars:nth-child(1) {
+      transform: translateY(5px) rotate(45deg);
+    }
+    .hamburger.active .bars:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bars:nth-child(3) {
+      transform: translateY(-5px) rotate(-45deg);
+    }
+    .navbarlist {
+      display: none;
+    }
+    .parentheader {
+      position: fixed;
+    }
+    .hamburger i {
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+    .navmenuiconul {
+      display: none;
+      transition: all 300ms ease;
+    }
+    .navmenuiconul.active {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      position: absolute;
+      top: 46px;
+      left: 0vw;
+      grid-gap: 3vh 36vw;
+      background: var(--color-white);
+      /* backdrop-filter: blur(50px); */
+      z-index: 5;
+      padding: var(--card-padding);
+      width: 100vw;
+    }
+    .navmenuicon a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0px 4px;
+    }
+    .cardbackground {
+      background: var(--color-white);
+      padding: var(--card-padding);
+      transition: all 300ms ease;
+      box-shadow: var(--box-shadow);
+      border-radius: var(--card-border-radius);
+      max-width: 85vw;
+      margin: 30px auto;
+    }
+    .introcontainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* flex-direction: column-reverse; */
+      gap: 30px;
+      margin: 10px auto;
+    }
+    .greetings {
+      font-size: 1.3rem;
+    }
+    .introduction {
+      padding: 0;
+    }
+    .social-icons {
+      position: absolute;
+      left: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      top: 250px;
+    }
+    .detailscontainer {
+      display: block;
+      margin: auto;
+      /* width: 50vw; */
+    }
+    .detailscontainer .tagline {
+      padding: 0;
+      text-align: center;
+    }
+    .inputfield,
+    .messagebox {
+      display: block;
+      background: var(--color-background);
+      margin: auto;
+      width: 63vw;
+      padding: 10px 40px;
+    }
+    .contactformpopupcontainer.active {
+      display: block;
+      position: fixed;
+      z-index: 3;
+      bottom: 5vh;
+      left: 26vw;
+    }
+    .messageboxinputlabel {
+      position: relative;
+      left: 36px;
+      bottom: 85px;
+      transition: all 300ms ease;
+    }
+    .messagebox:focus ~ .messageboxinputlabel {
+      position: relative;
+      bottom: 103px;
+      background: var(--color-white);
+    }
+    .jobcards {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: var(--card-border-radius);
+      width: 100%;
+    }
+    .portfoliosection .cardbackground {
+      background: var(--color-white);
+      padding: var(--card-padding);
+      transition: all 300ms ease;
+      box-shadow: var(--box-shadow);
+      border-radius: var(--card-border-radius);
+      /* max-width: 85vw; */
+      margin: 0 auto;
+    }
+    /* .jobdetailspopupcontainer {
+      position: fixed;
+      left: 5em;
+      top: 8rem;
+      transform: translate(-1%, -5%);
+    } */
+    .zealpopupcard.active,
+    .alphapopupcard.active {
+      display: block !important;
+      backdrop-filter: blur(50px);
+      transition: all 300ms ease;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90vw;
+    }
+    .jobdetailspopup .designation {
+      font-size: 1.3rem;
+    }
+    .htmltext,
+    .csstext,
+    .jstext,
+    .bootstraptext,
+    .githubtext {
+      display: none;
+      transition: opacity 300ms ease-in-out;
+      /* opacity: 0; */
+      color: transparent;
+    }
+    .htmlpic:hover .htmltext,
+    .csspic:hover .csstext,
+    .jspic:hover .jstext,
+    .bootstrappic:hover .bootstraptext,
+    .githubpic:hover .githubtext {
+      position: absolute;
+      left: 3em;
+      bottom: -2em;
+      opacity: 1;
+      display: block;
+      padding: 5px;
+    }
+  }
+  
+  /* ================================= for extra large screen size devices ================================= */
+  @media screen and (min-width: 2100px) {
+    .cardbackground {
+      margin-right: auto;
+      margin-left: auto;
+      width: 20vw;
+    }
+    .jobcards {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: var(--card-border-radius);
+      width: 10vw;
+    }
+    .autospace {
+      max-width: 80vw;
+      margin: 30px auto;
+      width: 20vw;
+    }
+  }
