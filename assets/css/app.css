@@ -438,7 +438,7 @@ ul {
 .htmlpic,
 .csspic,
 .jspic,
-.bootstrappic,
+.tailwindpic,
 .githubpic {
   position: relative;
   display: grid;
@@ -450,7 +450,7 @@ ul {
 .htmltext,
 .csstext,
 .jstext,
-.bootstraptext,
+.tailwindtext,
 .githubtext {
   /* display: none;  */
   transition: opacity 300ms ease-in-out;
@@ -461,7 +461,7 @@ ul {
 .htmlpic:hover .htmltext,
 .csspic:hover .csstext,
 .jspic:hover .jstext,
-.bootstrappic:hover .bootstraptext,
+.tailwindpic:hover .tailwindtext,
 .githubpic:hover .githubtext {
   background: var(--color-danger);
   padding: 7px 10px;
@@ -641,15 +641,15 @@ ul {
 }
 
 .spotifyclonepic {
-  background-image: url("assets/images/spotify-clone-logo.png");
+  background-image: url("../../assets/images/spotify-clone-logo.png");
 }
 
 .instagramclonepic {
-  background-image: url("assets/images/instagram-clone-logo.png");
+  background-image: url("../../assets/images/instagram-clone-logo.png");
 }
 
 .bloggingapppic {
-  background-image: url("assets/images/bloggingwebapp-pic.png");
+  background-image: url("../../assets/images/bloggingwebapp-pic.png");
 }
 
 .projectspicbox {
