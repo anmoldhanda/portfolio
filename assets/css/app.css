@@ -136,6 +136,10 @@ b {
   border-radius: var(--border-radius-1);
 }
 
+.current-theme svg {
+  fill: var(--color-white) !important;
+}
+
 /* .primaryclass {
   color: var(--color-primary);
 }
@@ -212,11 +216,11 @@ b {
   transform: scale(1.16);
 }
 
-.navmenuicon i,
+/* .navmenuicon i,
 .hamburger i,
 .keyvalues i {
   color: var(--color-danger);
-}
+} */
 
 /* ============================ hamburger menu & mobile navigation animation ============================ */
 .hamburger {
@@ -382,6 +386,17 @@ ul {
   color: var(--color-white);
 }
 
+.navmenuicon svg,
+.keyvalues svg,
+.contactmebtn svg {
+  fill: var(--color-danger);
+  height: 1em;
+}
+
+.contactmebtn:hover svg {
+  fill: var(--color-white);
+}
+
 .social-icons {
   position: absolute;
   left: 53px;
@@ -393,21 +408,37 @@ ul {
   top: 210px;
 }
 
-.social-icons i {
-  /* background: var(--color-white); */
+/* .social-icons i {
+  background: var(--color-white);
   color: var(--color-danger);
   cursor: pointer;
   font-size: 17px;
   padding: 6px 7px;
   border-radius: 50px;
   transition: all 300ms ease;
-  /* border: 1px solid var(--color-danger); */
+  border: 1px solid var(--color-danger);
+} */
+
+.social-icons svg {
+  height: 1.7em;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: var(--border-radius-1);
+  transition: all 300ms ease;
+  background: var(--color-background);
+  fill: var(--color-danger);
 }
 
-.social-icons i:hover {
+/* .social-icons i:hover {
   background: var(--color-danger);
   color: var(--color-white);
   transform: scale(1.19);
+} */
+
+.social-icons svg:hover {
+  transform: scale(1.19);
+  background: var(--color-danger);
+  fill: var(--color-background);
 }
 
 .heropic {
@@ -640,6 +671,16 @@ ul {
   margin: 2rem 0;
 }
 
+.twitterprofilevisit_link {
+  color: var(--color-dark-variant);
+  font-weight: bold;
+}
+
+.twitterprofilevisit_link:hover {
+  color: var(--color-danger);
+  transition: color 0.4s ease;
+}
+
 .spotifyclonepic {
   background-image: url("../../assets/images/spotify-clone-logo.png");
 }
@@ -690,6 +731,14 @@ ul {
 
 .linkstext:hover {
   color: var(--color-danger);
+}
+
+.linkstext:hover svg {
+  fill: var(--color-danger);
+}
+
+.projectslinks svg {
+  height: 1em;
 }
 
 /* =========================================== footer section =========================================== */
@@ -749,7 +798,16 @@ ul {
   position: relative;
 }
 
-.form-floating i {
+/* .form-floating i {
+  color: var(--color-danger);
+  position: relative;
+  left: 18px;
+  bottom: -28px;
+} */
+
+.form-floating svg {
+  fill: var(--color-danger);
+  height: 1em;
   color: var(--color-danger);
   position: relative;
   left: 18px;
@@ -763,7 +821,7 @@ ul {
 .inputlabel {
   position: relative;
   left: 33px;
-  bottom: 27px;
+  bottom: 31px;
   transition: all 300ms ease;
   font-size: 13px;
 }
@@ -873,4 +931,9 @@ ul {
   height: 100%;
   width: 50%;
   cursor: pointer;
+}
+
+.theme-toggler svg {
+  fill: var(--color-dark);
+  height: 1em;
 }
